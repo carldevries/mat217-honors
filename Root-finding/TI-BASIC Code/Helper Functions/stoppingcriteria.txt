@@ -1,0 +1,25 @@
+If O=1 and abs(F)<E
+Then
+	Disp “ROOT IS:”,X
+	Disp “ITERS IS:”,I
+	Pause
+	Stop
+End
+
+If O=2 and abs(F)<E and (U-L)<D
+Then	
+	Disp “ROOT IS:”,X
+	Disp “ITERS IS:”,I
+	Pause
+	Stop
+End
+
+If O=3 and abs(X-Z)/X)*100<E
+Then
+	Disp “ROOT IS:”,X
+	Disp “ITERS IS:”,I
+	Pause
+	Stop
+End
+ 
+Return

@@ -1,0 +1,18 @@
+Input “INTEGRAND:”,Y1
+Input “LOWER LIMIT:”,A
+Input “UPPER LIMIT:”,B
+Input “SUB-INTERVAL:”,N
+prgmEQUATION
+A→T
+0→R
+(B-A)/N→D
+For(I,1,N,1)
+T+.5*D→C
+Y1(C) →H
+R+H*D→R
+A+I*D→T
+End
+
+Disp “AREA IS:”,R
+
+Stop

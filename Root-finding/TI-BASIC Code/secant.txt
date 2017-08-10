@@ -1,0 +1,41 @@
+Input "EQUATION:",Y1
+Input "LOWER BOUND:",L
+Input "UPPER BOUND:",U
+
+Repeat O=1 or O=3
+	Disp "1=F(X) TOLERANCE"
+	Disp "3=PERCENT ERROR"
+	Prompt O
+End
+
+If 0=1
+Then
+	Input "F(X) TOLERANCE:",E
+End
+
+If O=3
+Then
+	Input "PERCENT ERROR:", E
+End
+
+Input "MAX ITERATIONS:",M
+
+pgrmEQUATION
+
+For(I,1,M,1)
+	L-(Y1(L)*(U-L))/(Y1(U) - Y1(L))→X
+	Y1(X)→F
+
+	Disp "X IS:", X
+	Disp "ITERS IS:",I
+	Pause
+
+	prgmSTPCRTRA
+	L→U
+	X→L
+End	
+
+Disp "NO ROOT"
+Disp "MAX ITERS",M
+Pause
+Stop
