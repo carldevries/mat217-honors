@@ -8,7 +8,7 @@ A→T
 (B-A)/N→D
 For(I,1,N-1,1)
 A+I*D→T
-R+Y1(T) →R
+R+Y1(T)→R
 End
 
 2*R→R

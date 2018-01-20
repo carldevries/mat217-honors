@@ -21,7 +21,7 @@ End
 
 If O=3
 Then
-	Input "PERCENT ERROR:", E
+	Input "PERCENT ERROR:",E
 End
 
 Input "MAX ITERATIONS:",M
@@ -34,7 +34,7 @@ For(I,1,M,1)
 	(1/2)*(L+U)→X
 	Y1(X)→F
 
-	Disp "X IS:", X
+	Disp "X IS:",X
 	Disp "ITERS IS:",I
 	Pause
 
